@@ -10,7 +10,7 @@
 <header>
     <div class="container">
         <div class="logo">
-            <a href="">TUDENGILEHT</a>
+            <a href="" style="text-decoration: none;">TUDENGILEHT</a>
         </div>
         <div class="trigger-main">
             <a href="javascript:void(0);" class="ham-burger">
@@ -20,10 +20,10 @@
         </div>
         <div class="navbar">
             <ul>
-                <li><a href="#avaleht" class="active">Avaleht</a></li>
-                <li><a href="#opimott">Õpimott</a></li>
-                <li><a href="#opisaidid">Õpisaidid</a></li>
-                <li><a href="#vabaaeg">Vaba aeg</a></li>
+                <li><a href="#avaleht" class="active" style="text-decoration: none;">Avaleht</a></li>
+                <li><a href="#opimott" style="text-decoration: none;">Õpimott</a></li>
+                <li><a href="#opisaidid" style="text-decoration: none;">Õpisaidid</a></li>
+                <li><a href="#vabaaeg" style="text-decoration: none;">Vaba aeg</a></li>
             </ul>
         </div>
     </div>
@@ -37,9 +37,9 @@
                     <div class="seksioon seksioon_0 tavaline">
                        <div class="rida rida_0">
                           <div class="veerg veerg_1_2 veerg_0  režiim">
-                             <div class="moodul tekst tekst_0 klikitav  vasakjoondus valgus">
+                             <div class="moodul tekst tekst_0 klikitav  vasakjoondus valgus" >
                                 <div class="sisemine_tekst">
-                                   <h2>pomodoro</h2>
+                                   <h2><a href="https://tomato-timer.com/" target="_blank" style="text-decoration: none;">pomodoro</a></h2>
                                 </div>
                              </div>
                              <div class="moodul tekst tekst_1  vasakjoondus valgus" >
@@ -51,7 +51,7 @@
                           <div class="veerg veerg_1_2 veerg_1  režiim viimane">
                              <div class="moodul tekst tekst_2 klikitav  vasakjoondus valgus">
                                 <div class="sisemine_tekst">
-                                   <h2>Toggl</h2>
+                                   <h2><a href="https://track.toggl.com/" target="_blank" style="text-decoration: none;">Toggl</a></h2>
                                 </div>
                              </div>
                              <div class="moodul tekst tekst_3  vasakjoondus valgus">
@@ -65,19 +65,19 @@
                           <div class="veerg veerg_1_2 veerg_2  režiim">
                              <div class="moodul tekst tekst_4 klikitav  vasakjoondus valgus">
                                 <div class="sisemine_tekst">
-                                   <h2>tenfingertyping</h2>
+                                   <h2><a href="https://thetypingcat.com/typing-speed-test" target="_blank" style="text-decoration: none;">typing</a></h2>
                                 </div>
                              </div>
                              <div class="moodul tekst tekst_5  vasakjoondus valgus">
                                 <div class="sisemine_tekst">
-                                   <h2>Kiiresti trükkimine</h2>
+                                     <h2>Kiiresti trükkimine</h2>
                                 </div>
                              </div>
                           </div>
                           <div class="veerg veerg_1_2 veerg_3  režiim viimane">
                              <div class="moodul tekst tekst_6 klikitav  vasakjoondus valgus">
                                 <div class="sisemine_tekst">
-                                   <h2>slack</h2>
+                                   <h2><a href="https://slack.com/" target="_blank" style="text-decoration: none;">slack</a></h2>
                                 </div>
                              </div>
                              <div class="moodul tekst tekst_7  vasakjoondus valgus">
@@ -93,36 +93,35 @@
            </div>
         </article>
      </div>
-
-     <script>
-        $(document).ready(function(){
-            var bottom=$("header").outerHeight();
-            var header=$("header").offset().top + bottom;
-         $(window).scroll(function(){
-              
-             if($(window).width()>991){
-             if($(window).scrollTop()>=header){
-                 $("header").addClass("sticky")
-             }
-             else{
-              $("header").removeClass("sticky")	
-             }
-             
-         }
-         })
-        
-         $(".navbar ul li a").click(function(){
-              $(".navbar ul li a").removeClass("active")
-              $(this).addClass("active");
-         })
-        
-        $(".ham-burger").click(function(){
-            $(this).toggleClass("active")
-            $(".navbar").toggleClass("open");
-        })
-        
-        })
-        
-     </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+       var bottom=$("header").outerHeight();
+       var header=$("header").offset().top + bottom;
+    $(window).scroll(function(){
+         
+        if($(window).width()>991){
+        if($(window).scrollTop()>=header){
+            $("header").addClass("sticky")
+        }
+        else{
+         $("header").removeClass("sticky")	
+        }
+    }
+    })
+   
+    $(".navbar ul li a").click(function(){
+         $(".navbar ul li a").removeClass("active")
+         $(this).addClass("active");
+    })
+   
+   $(".ham-burger").click(function(){
+       $(this).toggleClass("active")
+       $(".navbar").toggleClass("open");
+   })
+   
+   })
+   
+</script>
 </body>
 </html>
