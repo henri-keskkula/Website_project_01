@@ -16,3 +16,24 @@
         .veerg{width: 100%!important;}
     }
 }
+*{-webkit-box-sizing: border-box;box-sizing: border-box;}
+.tekst{word-wrap: break-word;}
+.rida{width: 80%;max-width: 1080px;margin: auto;position: relative;}
+.sisu{position: relative;z-index: 1;}
+.veerg{float: left;background-size: cover;background-position: 50%;position: relative;z-index: 2;min-height: 1px;}
+.režiim{mix-blend-mode: unset!important;}
+.veerg, .moodul, .rida{background-size: cover;background-position: 50%;background-repeat: no-repeat;}
+.rida:after{content: "";display: block;clear: both;visibility: hidden;line-height: 0;height: 0; width: 0;}
+.seksioon{background-position: 50%;background-size: 100%;background-size: cover;}
+.tekst>:last-child{padding-bottom: 0;}
+.sisemine_tekst{position: relative;}
+.vasakjoondus{text-align: left;}
+.seksioon{position: relative;background-color: #fff;}
+.rida .veerg.viimane, .rida .veerg:last-child{margin-right: 0!important;}
+.moodul{-webkit-animation-timing-function: linear;animation-timing-function: linear;-webkit-animation-duration: .2s;animation-duration: .2s;}
+@media (min-width:981px) {
+.seksioon{padding: 4% 0;}
+.rida{padding:2% 0;}
+.seksioon .rida .veerg .moodul:last-child{margin-bottom: 0;}
+.rida .veerg.veerg.viimane, .rida .veerg:last-child{margin-right: 0!important;}
+}
