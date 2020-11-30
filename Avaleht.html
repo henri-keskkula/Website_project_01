@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tudengileht</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <header>
+      <div class="container">
+         <div class="logo">
+            <a href="" style="text-decoration: none;">TUDENGILEHT</a>
+         </div>
+         <div class="trigger-main">
+            <a href="javascript:void(0);" class="ham-burger">
+            <span></span>
+            <span></span>
+            </a>
+         </div>
+         <div class="navbar">
+            <ul>
+               <li><a href="Avaleht.html" class="active" style="text-decoration: none;">Avaleht</a></li>
+               <li><a href="index.html" style="text-decoration: none;">Õpimott</a></li>
+               <li><a href="#opisaidid" style="text-decoration: none;">Õpisaidid</a></li>
+               <li><a href="#vabaaeg" style="text-decoration: none;">Vaba aeg</a></li>
+            </ul>
+         </div>
+      </div>
+   </header>
+   <body>
+      <div id="main-content2">
+         <article id="id_1" class="id_1 leht2 tüüp-leht2 avalik id2">
+            <div class="sisu2">
+               <div class="id-l id-l-post">
+                  <div class="sisu2_1 sisu_rada">
+                     <div class="seksioon2 seksioon_3 tavaline_seksioon">
+                        <div class="rida_2 rida_3">
+                           <div class="veerg2 veerg2_4_4 veerg2_0  pääs viimane2">
+                              <div class="moodul2 tekst2 tekst2_0 klikitav  tekst2_vasak valgus">
+                                 <div class="tekst2_sise">
+                                    <h2><a class="a_2" href="index.html" style="text-decoration: none;">Õpimott</a></h2>
+                                 </div>
+                              </div>
+                              <div class="moodul2 tekst2 tekst2_1 klikitav  tekst2_vasak valgus">
+                                 <div class="tekst2_sise">
+                                    <h2>Õpisaidid</h2>
+                                 </div>
+                              </div>
+                              <div class="moodul2 tekst2 tekst2_2 klikitav  tekst2_vasak valgus">
+                                 <div class="tekst2_sise">
+                                    <h2>vaba aeg</h2>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </article>
+      </div>
+   </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+       var bottom=$("header").outerHeight();
+       var header=$("header").offset().top + bottom;
+    $(window).scroll(function(){
+         
+        if($(window).width()>991){
+        if($(window).scrollTop()>=header){
+            $("header").addClass("sticky")
+        }
+        else{
+         $("header").removeClass("sticky")	
+        }
+    }
+    })
+   
+    $(".navbar ul li a").click(function(){
+         $(".navbar ul li a").removeClass("active")
+         $(this).addClass("active");
+    })
+   
+   $(".ham-burger").click(function(){
+       $(this).toggleClass("active")
+       $(".navbar").toggleClass("open");
+   })
+   
+   })
+   
+</script>

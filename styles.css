@@ -164,3 +164,81 @@ header .navbar ul li a:hover::before{width: 100%;}
     header .navbar{position: fixed;top:0;right:0;bottom:0;width:180px;background-color: #222222;z-index:200;padding-top:80px;-webkit-transform: translateX(100%);transform: translateX(100%);transition: transform .5s ease;-webkit-transition: -webkit-transform .5s ease;}
     header .navbar.open{-webkit-transform: translateX(0);transform: translateX(0);}
     header .navbar ul li{display: block;}}
+
+/* Avaleht CSS */
+
+@media all{
+#main-content2{background-color:#fff;}
+.lehe_paigutus .sisu2{margin-bottom:0!important;padding-top:0;}
+.leht .lehe_paigutus #main-content2{background-color:transparent;}
+@media (min-width:981px){
+.sisu_rada .veerg2{margin-right:5.5%;}
+.sisu_rada .veerg2_4_4{width:100%;}
+.sisu_rada .veerg2_4_4 .moodul2{margin-bottom:2.75%;}
+}
+@media (max-width:479px){
+.veerg2{width:100%!important;}
+}
+*{-webkit-box-sizing:border-box;box-sizing:border-box;}
+.tekst2{word-wrap:break-word;}
+.rida_2{width:80%;max-width:1080px;margin:auto;position:relative;}
+.sisu2_1{position:relative;z-index:1;}
+.veerg2{float:left;background-size:cover;background-position:50%;position:relative;z-index:2;min-height:1px;}
+.pääs{mix-blend-mode:unset!important;}
+.veerg2,.moodul2,.rida_2{background-size:cover;background-position:50%;background-repeat:no-repeat;}
+.rida_2:after{content:"";display:block;clear:both;visibility:hidden;line-height:0;height:0;width:0;}
+.seksioon2{background-position:50%;background-size:100%;background-size:cover;}
+.tekst2>:last-child{padding-bottom:0;}
+.tekst2_sise{position:relative;}
+.tekst2_vasak{text-align:left;}
+.seksioon2{position:relative;background-color:#fff;}
+.rida_2 .veerg2.viimane2,.rida_2 .veerg2:last-child{margin-right:0!important;}
+.moodul2{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-duration:.2s;animation-duration:.2s;}
+@media (min-width:981px){
+.seksioon2{padding:4% 0;}
+.rida_2{padding:2% 0;}
+.seksioon2 .rida_2 .veerg2 .moodul2:last-child{margin-bottom:0;}
+.rida_2 .veerg2.viimane2,.rida_2 .veerg2:last-child{margin-right:0!important;}
+}
+@media (max-width:980px){
+.veerg2{width:100%;margin-bottom:30px;}
+.seksioon2{padding:50px 0;}
+.rida_2{padding:30px 0;}
+.rida_2 .veerg2.viimane2,.rida_2 .veerg2:last-child{margin-bottom:0;}
+.veerg2 .moodul2{margin-bottom:30px;}
+.rida_2 .veerg2 .moodul2:last-child{margin-bottom:0;}
+.rida_2{max-width:1080px;}
+}
+
+.rida_2{max-width:1920px;}
+@media only screen and (min-width:2400px){
+.rida_2{padding:48px 0;}
+.seksioon2{padding:96px 0;}
+}
+@media only screen and (max-width:767px){
+.seksioon2{padding:22px 0;}
+}
+@media screen and (max-width:1541px){
+div.tekst2_0 h2{font-size:40px;}
+}
+@media screen and (max-width:1227px){
+div.tekst2_0 h2{font-size:30px;}
+}
+@media screen and (max-width:416px){
+div.tekst2_0 h2{font-size:20px;}
+}
+
+.tekst2_0 h2{text-transform:uppercase;font-size:33px;color:#000000!important;text-align:center;text-shadow:0em 0.1em 0.1em #000000;}
+.tekst2_1 h2{text-transform:uppercase;font-size:33px;color:#000000!important;text-align:center;text-shadow:0em 0.1em 0.1em #000000;}
+.tekst2_2 h2{text-transform:uppercase;font-size:33px;color:#000000!important;text-align:center;text-shadow:0em 0.1em 0.1em #000000;}
+.tekst2_0{background-color:rgba(255,255,255,0.29);position:relative;filter:saturate(145%) brightness(114%) contrast(75%);backface-visibility:hidden;padding-top:50px!important;padding-bottom:50px!important;max-width:69%;box-shadow:inset 0px 0px 18px 0px rgba(0,0,0,0.3);transition:box-shadow 300ms ease 0ms;}
+.tekst2_1{background-color:rgba(255,255,255,0.29);position:relative;filter:saturate(145%) brightness(114%) contrast(75%);backface-visibility:hidden;padding-top:50px!important;padding-bottom:50px!important;max-width:69%;box-shadow:inset 0px 0px 18px 0px rgba(0,0,0,0.3);transition:box-shadow 300ms ease 0ms;}
+.tekst2_2{background-color:rgba(255,255,255,0.29);position:relative;filter:saturate(145%) brightness(114%) contrast(75%);backface-visibility:hidden;padding-top:50px!important;padding-bottom:50px!important;max-width:69%;box-shadow:inset 0px 0px 18px 0px rgba(0,0,0,0.3);transition:box-shadow 300ms ease 0ms;}
+.tekst2_0:hover{box-shadow:inset 0px 0px 80px 24px rgba(0,0,0,0.76);}
+.tekst2_1:hover{box-shadow:inset 0px 0px 80px 24px rgba(0,0,0,0.76);}
+.tekst2_2:hover{box-shadow:inset 0px 0px 80px 24px rgba(0,0,0,0.76);}
+.tekst2_0.moodul2{margin-left:auto!important;margin-right:auto!important;}
+.tekst2_1.moodul2{margin-left:auto!important;margin-right:auto!important;}
+.tekst2_2.moodul2{margin-left:auto!important;margin-right:auto!important;}
+.a_2{color: #000000;}
+}
