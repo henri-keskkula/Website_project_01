@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tudengileht</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="Avaleht.html" style="text-decoration: none;">TUDENGILEHT</a>
+        </div>
+        <div class="trigger-main">
+            <a href="javascript:void(0);" class="ham-burger">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="Avaleht.html" class="active" style="text-decoration: none;">Avaleht</a></li>
+                <li><a href="index.html" style="text-decoration: none;">Õpimott</a></li>
+                <li><a href="opisaidid.html" style="text-decoration: none;">Õpisaidid</a></li>
+                <li><a href="Vabaaeg.html" style="text-decoration: none;">Vaba aeg</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<body>
+    <div class="row">
+    	<div class="column">
+    		<h2>Õppeinfosüsteem (OIS2)</h2>
+    		<a href="https://ois2.ut.ee/" target="_blank" rel="noopener noreferrer" class=button>
+    			<img alt="OIS2" src="https://antegenes.com/wp-content/uploads/2020/05/tu_logo.png" width=100% height=100%>
+             </a>
+         	<br>
+    	</div>
+
+        <div class="column">
+    		<h2>Moodle</h2>
+    		<a href="https://moodle.ut.ee/" target="_blank" rel="noopener noreferrer" class=button>
+    			<img alt="Moodle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Moodle-logo.svg/1200px-Moodle-logo.svg.png" width=100% height=100%>
+             </a>
+         	<br>
+        </div>
+    </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+       var bottom=$("header").outerHeight();
+       var header=$("header").offset().top + bottom;
+    $(window).scroll(function(){
+         
+        if($(window).width()>991){
+        if($(window).scrollTop()>=header){
+            $("header").addClass("sticky")
+        }
+        else{
+         $("header").removeClass("sticky")	
+        }
+    }
+    })
+   
+    $(".navbar ul li a").click(function(){
+         $(".navbar ul li a").removeClass("active")
+         $(this).addClass("active");
+    })
+   
+   $(".ham-burger").click(function(){
+       $(this).toggleClass("active")
+       $(".navbar").toggleClass("open");
+   })
+   
+   })
+   
+</script>
+</body>
+</html>
